@@ -1,0 +1,6 @@
+:root {
+    --branco: hsl(0, 0%, 100%);
+    --preto:  hsl(0, 0%, 0%);
+    --preto-cinza: hsl(0, 0%, 55%);
+    --muito-preto-cinza: hsl(0, 0%, 41%);
+}
