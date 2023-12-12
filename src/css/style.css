@@ -10,7 +10,7 @@ body {
 .fixed {
   width: 100%;
   position: fixed;
-  padding: 60px 100px;
+  padding: 40px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,11 +36,12 @@ body {
 
 .fixed .menu li a:hover {
   cursor: pointer;
-  border-bottom: 1px solid var(--branco);
+  border-bottom: 2px solid var(--branco);
 }
 
 .home {
   background-image: url(../images/desktop/image-hero.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   min-height: 700px;
@@ -55,47 +56,123 @@ body {
   font-weight: 300;
   line-height: 65px;
   font-size: 60px;
-  width: 500px;
-  margin-left: 80px;
+  width: 400px;
+  margin-left: 90px;
   padding: 40px;
-  text-align: start;
   color: var(--branco);
-  border: 1px solid var(--branco);
+  border: 2px solid var(--branco);
 }
 
 .about {
   width: 100%;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .content-about {
   padding: 40px;
-  position: relative;
 }
 
-.content-titile {
-  margin-top: 200px;
+.content-titile { 
+  padding: 50px;
+  position: absolute;
+  bottom: -1%;
+  right: 1%;
+  background-color: var(--branco);
 }
 
 .content-titile .about-title {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  font-size: 50px;
-  width: 400px;
+  font-family: 'Alata', sans-serif;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 40px;
+  width: 450px;
   margin-bottom: 30px;
   color: var(--preto);
 }
 
-
 .content-titile  .description {
   color: var(--preto-cinza);
-  line-height: 25px;
+  line-height: 30px;
   font-size: 20px;
-  width: 350px;
+  width: 450px;
 }
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.interaction-projects {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin-bottom: 30px;
+}
+
+.projects-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--preto);
+  font-size: 40px;
+  font-weight: 300; 
+}
+
+.projects-btn {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--branco);
+  font-weight: 500;
+  width: 150px;
+  border: 1px solid var(--preto);
+  padding: 10px 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.projects-btn:hover {
+  color: var(--branco);
+  background-color: var(--preto);
+  border: 1px solid var(--branco);
+}
+
+.projects-containers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.project-container {
+  position: relative;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.project-container:hover {
+   filter: grayscale(100%);
+
+}
+
+.projects-text {
+  font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  letter-spacing: 3px;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 34px;
+  width: 200px;
+  top: 70%;
+  left: 15%;
+  color: var(--branco);
+}
+
 
 .attribution {
   font-size: 11px;
