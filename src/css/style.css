@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 .fixed .soon {
@@ -157,7 +158,6 @@ body {
 
 .project-container:hover {
    filter: grayscale(100%);
-
 }
 
 .projects-text {
@@ -171,6 +171,23 @@ body {
   top: 70%;
   left: 15%;
   color: var(--branco);
+  transition: 0.3s ease-in-out;
+}
+
+.projects-text:hover {
+  transform: scale(1.1);
+}
+
+.contact {
+  background-color: var(--preto);
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-contact {
+  
 }
 
 
