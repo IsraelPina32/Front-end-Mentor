@@ -78,7 +78,7 @@ body {
   padding: 40px;
 }
 
-.content-titile { 
+.content-titile {
   padding: 50px;
   position: absolute;
   bottom: -1%;
@@ -87,7 +87,7 @@ body {
 }
 
 .content-titile .about-title {
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   font-weight: 700;
   letter-spacing: 4px;
   font-size: 40px;
@@ -96,7 +96,7 @@ body {
   color: var(--preto);
 }
 
-.content-titile  .description {
+.content-titile .description {
   color: var(--preto-cinza);
   line-height: 30px;
   font-size: 20px;
@@ -121,7 +121,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: var(--preto);
   font-size: 40px;
-  font-weight: 300; 
+  font-weight: 300;
 }
 
 .projects-btn {
@@ -157,7 +157,7 @@ body {
 }
 
 .project-container:hover {
-   filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .projects-text {
@@ -187,14 +187,98 @@ body {
 }
 
 .main-contact {
-  
+  padding: 50px;
 }
 
+.contact-list {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list p {
+  padding: 5px 5px 0 0;
+}
+
+.second-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-list svg {
+  margin-left: 15px;
+}
+
+.contact-description {
+  padding: 15px;
+}
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+@media (max-width: 2560px) {
+  .content-titile {
+    right: 15%;
+    bottom: 1%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .content-titile {
+    padding: 20px;
+    right: 2%;
+    bottom: 7%;
+  }
+  .content-titile .about-title {
+    font-size: 25px;
+  }
+
+  .content-titile .description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-titile {
+    right: 2%;
+    bottom: 1%;
+  }
+  .content-titile .about-title {
+    font-size: 25px;
+    width: 400px;
+  }
+
+  .content-titile .description {
+    font-size: 12px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .imagem-interactive {
+    position: relative;
+    right: -25%;
+    height: 300px;
+    width: 400px;
+  }
+  .content-titile {
+    position: relative;
+    right: -20%;
+  }
+   .interaction-project {
+     width: 400px;
+     justify-content: center;
+
+  }
+  .projects-btn {
+    display: none;
+  }
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--branco);
 }
