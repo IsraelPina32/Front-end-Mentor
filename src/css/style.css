@@ -30,7 +30,7 @@ body {
 }
 
 .fixed .menu li a {
-  padding: 15px 15px 4px 15px;
+  padding: 15px 15px 2px 15px;
   color: var(--branco);
   transition: 0.3s ease-in-out;
 }
@@ -82,7 +82,7 @@ body {
   padding: 50px;
   position: absolute;
   bottom: -1%;
-  right: 1%;
+  right: 20%;
   background-color: var(--branco);
 }
 
@@ -207,10 +207,16 @@ body {
   margin: 40px 40px 0 0;
 }
 
-.second-list svg {
-  margin-left: 15px;
-}
 
+.second-list svg {
+  margin: 15px 15px 4px 15px;
+  transition: 0.2s ease-in-out;
+}
+.second-list :hover {
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 10px;
+}
 .contact-description {
   padding: 15px;
 }
@@ -222,17 +228,10 @@ body {
   color: var(--branco);
 }
 
-@media (max-width: 2560px) {
-  .content-titile {
-    right: 20%;
-    bottom: 1%;
-  }
-}
-
 @media (max-width: 1440px) {
   .content-titile {
     padding: 25px;
-    right: 2%;
+    right: 1%;
     bottom: 7%;
   }
   .content-titile .about-title {
@@ -245,8 +244,7 @@ body {
 }
 
 @media (max-width: 768px) {
-
-  .interaction-projects{
+  .interaction-projects {
     width: 300px;
   }
 
@@ -254,9 +252,9 @@ body {
     font-size: 50px;
   }
 
-  .projects-btn{
+  .projects-btn {
     display: none;
-  } 
+  }
   .content-titile {
     position: relative;
     right: 2%;
@@ -278,11 +276,6 @@ body {
 }
 
 @media (max-width: 425px) {
-
-  /* .home {
-    width: 140%;
-  } */
-  
   .imagem-interactive {
     position: relative;
     left: 10%;
@@ -306,7 +299,7 @@ body {
     text-align: center;
   }
 
-  .contact-list{
+  .contact-list {
     flex-direction: column;
   }
 
