@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
+html {
+  max-width: 2550px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
 body {
@@ -22,6 +31,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   color: var(--branco);
+  align-self: flex-start;
 }
 
 .fixed .menu {
@@ -46,6 +56,8 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 700px;
+  min-width: 550px;
+  justify-content: center;
   width: 100%;
   display: flex;
   align-items: center;
@@ -56,10 +68,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   line-height: 65px;
-  font-size: 60px;
+  font-size: 50px;
   width: 400px;
   margin-left: 90px;
   padding: 40px;
+  text-transform: uppercase;
   color: var(--branco);
   border: 2px solid var(--branco);
 }
@@ -107,13 +120,14 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 30px 0;
+  justify-content: center;
+  padding: 30px 40px;
 }
 
 .interaction-projects {
   display: flex;
   justify-content: space-between;
-  width: 1050px;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -122,6 +136,7 @@ body {
   color: var(--preto);
   font-size: 40px;
   font-weight: 300;
+  margin-right: 400px;
 }
 
 .projects-btn {
@@ -146,12 +161,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 20px;
 }
 
 .project-container {
-  position: relative;
-  padding: 15px;
+  padding: 5px;
   transition: 0.3s ease-in-out;
   filter: grayscale(0%);
 }
@@ -244,22 +257,24 @@ body {
 }
 
 @media (max-width: 768px) {
-  .interaction-projects {
-    width: 300px;
+  .home .title {
+    margin: 0;
   }
-
   .projects-title {
     font-size: 50px;
+    margin: 0;
   }
 
   .projects-btn {
     display: none;
   }
+
   .content-titile {
     position: relative;
     right: 2%;
-    bottom: 1%;
+    bottom: 1%; 
   }
+  
   .content-titile .about-title {
     font-size: 25px;
     width: 400px;
@@ -276,15 +291,21 @@ body {
 }
 
 @media (max-width: 425px) {
+  .home .title {
+    margin-left: 60px;
+  }
   .imagem-interactive {
     position: relative;
-    left: 10%;
+    left: 15%;
     height: 300px;
     width: 400px;
   }
   .content-titile {
     position: relative;
-    left: 10%;
+    left: 11%;
+  }
+  .projects-containers {
+    margin-left: 140px;
   }
   .projects-title {
     position: relative;
@@ -296,16 +317,27 @@ body {
 
   .contact {
     flex-direction: column;
-    text-align: center;
+    width: 600px;
+  }
+
+  .main-contact, .second-contact {
+    margin-left: 140px;
   }
 
   .contact-list {
     flex-direction: column;
   }
+  
 
   .contact-list p {
     padding: 10px 5px 8px 0;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 320px){
+  .home .title {
+    margin-left: 140px;
   }
 }
 .attribution a {
