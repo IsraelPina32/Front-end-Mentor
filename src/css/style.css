@@ -57,7 +57,7 @@ body {
   background-position: center;
   min-height: 700px;
   min-width: 550px;
-  justify-content: center;
+  text-align: center;
   width: 100%;
   display: flex;
   align-items: center;
@@ -257,6 +257,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .home {
+    justify-content: center;
+  }
   .home .title {
     margin: 0;
   }
@@ -291,6 +294,9 @@ body {
 }
 
 @media (max-width: 425px) {
+  .home {
+    justify-content: center;
+  }
   .home .title {
     margin-left: 60px;
   }
