@@ -302,16 +302,16 @@ body {
   }
   .imagem-interactive {
     position: relative;
-    left: 15%;
-    height: 300px;
-    width: 400px;
+    left: 35%;
+    height: 200px;
+    width: 250px;
   }
   .content-titile {
     position: relative;
-    left: 11%;
+    left: 10%;
   }
-  .projects-containers {
-    margin-left: 140px;
+  .projects-text {
+    left: 40%;
   }
   .projects-title {
     position: relative;
