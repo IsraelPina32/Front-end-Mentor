@@ -1,21 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-html {
-  max-width: 2550px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 /* font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
 body {
   max-width: 2560px;
   margin: 0 auto;
 }
-
 .fixed {
   width: 100%;
   position: fixed;
@@ -25,7 +15,6 @@ body {
   align-items: center;
   z-index: 2;
 }
-
 .fixed .soon {
   font-family: "Alata", sans-serif;
   font-size: 32px;
@@ -33,23 +22,19 @@ body {
   color: var(--branco);
   align-self: flex-start;
 }
-
 .fixed .menu {
   display: flex;
   align-items: center;
 }
-
 .fixed .menu li a {
   padding: 15px 15px 2px 15px;
   color: var(--branco);
   transition: 0.3s ease-in-out;
 }
-
 .fixed .menu li a:hover {
   cursor: pointer;
   border-bottom: 2px solid var(--branco);
 }
-
 .home {
   background-image: url(../images/desktop/image-hero.jpg);
   background-attachment: fixed;
@@ -63,7 +48,6 @@ body {
   align-items: center;
   padding: 25px;
 }
-
 .home .title {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -76,7 +60,6 @@ body {
   color: var(--branco);
   border: 2px solid var(--branco);
 }
-
 .about {
   width: 100%;
   display: flex;
@@ -86,11 +69,9 @@ body {
   flex-wrap: wrap;
   position: relative;
 }
-
 .content-about {
   padding: 40px;
 }
-
 .content-titile {
   padding: 50px;
   position: absolute;
@@ -98,7 +79,6 @@ body {
   right: 20%;
   background-color: var(--branco);
 }
-
 .content-titile .about-title {
   font-family: "Alata", sans-serif;
   font-weight: 700;
@@ -108,14 +88,12 @@ body {
   margin-bottom: 30px;
   color: var(--preto);
 }
-
 .content-titile .description {
   color: var(--preto-cinza);
   line-height: 30px;
   font-size: 20px;
   width: 450px;
 }
-
 .projects {
   display: flex;
   align-items: center;
@@ -123,14 +101,12 @@ body {
   justify-content: center;
   padding: 30px 40px;
 }
-
 .interaction-projects {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-
 .projects-title {
   font-family: "Josefin Sans", sans-serif;
   color: var(--preto);
@@ -138,7 +114,6 @@ body {
   font-weight: 300;
   margin-right: 400px;
 }
-
 .projects-btn {
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
@@ -149,30 +124,25 @@ body {
   padding: 10px 10px;
   transition: 0.3s ease-in-out;
 }
-
 .projects-btn:hover {
   color: var(--branco);
   background-color: var(--preto);
   border: 1px solid var(--branco);
 }
-
 .projects-containers {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .project-container {
-  padding: 5px;
+  padding: 15px;
   transition: 0.3s ease-in-out;
   filter: grayscale(0%);
 }
-
 .project-container:hover {
   filter: grayscale(100%);
 }
-
 .projects-text {
   font-family: "Josefin Sans", sans-serif;
   position: absolute;
@@ -186,11 +156,9 @@ body {
   color: var(--branco);
   transition: 0.3s ease-in-out;
 }
-
 .projects-text:hover {
   transform: scale(1.1);
 }
-
 .contact {
   background-color: var(--preto);
   color: var(--branco);
@@ -198,20 +166,16 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 .main-contact {
   padding: 50px;
 }
-
 .contact-list {
   display: flex;
   justify-content: center;
 }
-
 .contact-list p {
   padding: 5px 5px 0 0;
 }
-
 .second-contact {
   display: flex;
   flex-direction: column;
@@ -219,13 +183,11 @@ body {
   padding: 40px;
   margin: 40px 40px 0 0;
 }
-
-
 .second-list svg {
   margin: 15px 15px 4px 15px;
   transition: 0.2s ease-in-out;
 }
-.second-list :hover {
+.second-list:hover {
   cursor: pointer;
   font-weight: 400;
   border-radius: 10px;
@@ -267,16 +229,6 @@ body {
     font-size: 50px;
     margin: 0;
   }
-
-  .projects-btn {
-    display: none;
-  }
-
-  .content-titile {
-    position: relative;
-    right: 2%;
-    bottom: 1%; 
-  }
   
   .content-titile .about-title {
     font-size: 25px;
@@ -297,30 +249,10 @@ body {
   .home {
     justify-content: center;
   }
+
   .home .title {
     margin-left: 60px;
   }
-  .imagem-interactive {
-    position: relative;
-    left: 35%;
-    height: 200px;
-    width: 250px;
-  }
-  .content-titile {
-    position: relative;
-    left: 10%;
-  }
-  .projects-text {
-    left: 40%;
-  }
-  .projects-title {
-    position: relative;
-    right: -25%;
-  }
-  .projects-btn {
-    display: none;
-  }
-
   .contact {
     flex-direction: column;
     width: 600px;
@@ -333,19 +265,8 @@ body {
   .contact-list {
     flex-direction: column;
   }
-  
-
   .contact-list p {
     padding: 10px 5px 8px 0;
     font-size: 20px;
   }
-}
-
-@media (max-width: 320px){
-  .home .title {
-    margin-left: 140px;
-  }
-}
-.attribution a {
-  color: var(--branco);
 }
