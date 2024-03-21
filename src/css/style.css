@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
-
-/* font-family: 'Alata', sans-serif;
-font-family: 'Josefin Sans', sans-serif; */
 body {
   max-width: 2560px;
   margin: 0 auto;
@@ -27,9 +24,9 @@ body {
   align-items: center;
 }
 .fixed .menu li a {
-  padding: 15px 15px 2px 15px;
+  padding: 15px 15px;
   color: var(--branco);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in;
 }
 .fixed .menu li a:hover {
   cursor: pointer;
@@ -53,66 +50,68 @@ body {
   font-weight: 300;
   line-height: 65px;
   font-size: 50px;
-  width: 400px;
+  width: 500px;
   margin-left: 90px;
   padding: 40px;
   text-transform: uppercase;
   color: var(--branco);
   border: 2px solid var(--branco);
 }
-.about {
-  width: 100%;
+.about  {
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
+  margin: 20px 0;
 }
 .content-about {
   padding: 40px;
 }
+
 .content-titile {
-  padding: 50px;
-  position: absolute;
-  bottom: -1%;
-  right: 20%;
+  height: 270px;
+  width: 660px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
   background-color: var(--branco);
+  position: relative;
+  top: 0;
+  bottom: 5%;
+  right: 10%;
 }
 .content-titile .about-title {
   font-family: "Alata", sans-serif;
   font-weight: 700;
   letter-spacing: 4px;
   font-size: 40px;
-  width: 450px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: var(--preto);
 }
 .content-titile .description {
   color: var(--preto-cinza);
   line-height: 30px;
   font-size: 20px;
-  width: 450px;
 }
+
 .projects {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 40px;
+  display: grid;
+  grid-template-areas: "projects" "projects" "projects" "projects";
+  grid-template-columns: 3fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-area: projects;
 }
 .interaction-projects {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .projects-title {
   font-family: "Josefin Sans", sans-serif;
   color: var(--preto);
   font-size: 40px;
   font-weight: 300;
-  margin-right: 400px;
 }
 .projects-btn {
   text-decoration: none;
@@ -121,7 +120,7 @@ body {
   font-weight: 500;
   width: 150px;
   border: 1px solid var(--preto);
-  padding: 10px 10px;
+  padding: 12px 12px;
   transition: 0.3s ease-in-out;
 }
 .projects-btn:hover {
@@ -150,7 +149,7 @@ body {
   line-height: 35px;
   font-weight: 400;
   font-size: 34px;
-  width: 200px;
+  width: 20px;
   top: 70%;
   left: 15%;
   color: var(--branco);
@@ -172,6 +171,7 @@ body {
 .contact-list {
   display: flex;
   justify-content: center;
+  gap: 15px;
 }
 .contact-list p {
   padding: 5px 5px 0 0;
@@ -181,7 +181,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  margin: 40px 40px 0 0;
 }
 .second-list svg {
   margin: 15px 15px 4px 15px;
@@ -204,10 +203,12 @@ body {
 }
 
 @media (max-width: 1440px) {
+  .imagem-interactive {
+      width: 500px;
+  }
+
   .content-titile {
     padding: 25px;
-    right: 1%;
-    bottom: 7%;
   }
   .content-titile .about-title {
     font-size: 25px;
@@ -225,23 +226,27 @@ body {
   .home .title {
     margin: 0;
   }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-titile {
+    width: 500px;
+    height: 250px;
+    right: 0;
+  }
   .projects-title {
     font-size: 50px;
-    margin: 0;
-  }
-  
-  .content-titile .about-title {
-    font-size: 25px;
-    width: 400px;
   }
 
   .content-titile .description {
-    font-size: 12px;
-    width: 400px;
-  }
-
-  .second-contact {
-    margin: 0;
+    font-size: 15px; 
   }
 }
 
@@ -259,7 +264,8 @@ body {
   }
 
   .main-contact, .second-contact {
-    margin-left: 140px;
+     text-align: center;
+     gap: 15px;
   }
 
   .contact-list {
