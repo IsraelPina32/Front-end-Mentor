@@ -254,7 +254,6 @@ body {
   .home {
     justify-content: center;
   }
-
   .home .title {
     margin-left: 60px;
   }
@@ -262,12 +261,10 @@ body {
     flex-direction: column;
     width: 600px;
   }
-
   .main-contact, .second-contact {
      text-align: center;
      gap: 15px;
   }
-
   .contact-list {
     flex-direction: column;
   }
