@@ -61,28 +61,28 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  position: relative;
 }
 .content-about {
   padding: 40px;
 }
 
 .content-titile {
-  height: 270px;
-  width: 660px;
+  height: 350px;
+  width: 450px;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
-  padding: 20px;
+  padding: 30px;
   background-color: var(--branco);
-  position: relative;
-  top: 0;
-  bottom: 5%;
-  right: 10%;
+  position: absolute;
+  top: 35%;
+  right: 25%;
 }
 .content-titile .about-title {
   font-family: "Alata", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 4px;
   font-size: 40px;
   margin-bottom: 20px;
@@ -91,7 +91,7 @@ body {
 .content-titile .description {
   color: var(--preto-cinza);
   line-height: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .projects {
@@ -207,7 +207,9 @@ body {
       width: 500px;
   }
   .content-titile {
-    padding: 25px;
+      height: 250px;
+      top: 35%;
+      right: 12%;
   }
   .content-titile .about-title {
     font-size: 25px;
@@ -233,9 +235,10 @@ body {
     text-align: center;
   }
   .content-titile {
-    width: 500px;
+    position: static;
     height: 250px;
-    right: 0;
+    bottom: 25%;
+    right: 25%;
   }
   .projects-title {
     font-size: 50px;
@@ -247,12 +250,10 @@ body {
 }
 
 @media (max-width: 425px) {
-  .home {
-    justify-content: center;
-  }
   .home .title {
     margin-left: 60px;
   }
+
   .contact {
     flex-direction: column;
     width: 600px;
@@ -267,5 +268,13 @@ body {
   .contact-list p {
     padding: 10px 5px 8px 0;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .projects-text {
+    top: 60%;
+    width: 300px;
+    padding: 10px;
   }
 }
