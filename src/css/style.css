@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
-body {
-  max-width: 2560px;
-  margin: 0 auto;
-}
+
+
 .fixed {
-  width: 100%;
-  position: fixed;
+  background-color: red;
   padding: 40px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
 }
 .fixed .soon {
   font-family: "Alata", sans-serif;
@@ -96,22 +92,20 @@ body {
 
 .projects {
   display: grid;
-  grid-template-areas: "projects" "projects" "projects" "projects";
-  grid-template-columns: 3fr;
-  grid-template-rows: repeat(1, 1fr);
-  grid-area: projects;
+  grid: "projects-title projects-btn" 
+        "projects-containers projects-containers" ;
+  max-width: 69.4rem;
+  margin: 0 auto;
+  gap: 2rem;
+  margin-bottom: 10rem;
 }
-.interaction-projects {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 .projects-title {
   font-family: "Josefin Sans", sans-serif;
   color: var(--preto);
   font-size: 40px;
   font-weight: 300;
+  grid-area: projects-title;
 }
 .projects-btn {
   text-decoration: none;
@@ -122,6 +116,8 @@ body {
   border: 1px solid var(--preto);
   padding: 12px 12px;
   transition: 0.3s ease-in-out;
+  grid-area: projects-btn;
+  margin-left: auto;
 }
 .projects-btn:hover {
   color: var(--branco);
@@ -133,14 +129,18 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  grid-area: projects-containers;
+  gap: 1.8rem;
 }
 .project-container {
-  padding: 15px;
   transition: 0.3s ease-in-out;
   filter: grayscale(0%);
 }
 .project-container:hover {
   filter: grayscale(100%);
+}
+.project-container img {
+    display: block;
 }
 .projects-text {
   font-family: "Josefin Sans", sans-serif;
@@ -200,81 +200,4 @@ body {
   text-align: center;
   background-color: var(--preto);
   color: var(--branco);
-}
-
-@media (max-width: 1440px) {
-  .imagem-interactive {
-      width: 500px;
-  }
-  .content-titile {
-      height: 250px;
-      top: 35%;
-      right: 12%;
-  }
-  .content-titile .about-title {
-    font-size: 25px;
-  }
-  .content-titile .description {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  .home {
-    justify-content: center;
-  }
-  .home .title {
-    margin: 0;
-  }
-  .projects {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .about {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .content-titile {
-    position: static;
-    height: 250px;
-    bottom: 25%;
-    right: 25%;
-  }
-  .projects-title {
-    font-size: 50px;
-  }
-
-  .content-titile .description {
-    font-size: 15px; 
-  }
-}
-
-@media (max-width: 425px) {
-  .home .title {
-    margin-left: 60px;
-  }
-
-  .contact {
-    flex-direction: column;
-    width: 600px;
-  }
-  .main-contact, .second-contact {
-     text-align: center;
-     gap: 15px;
-  }
-  .contact-list {
-    flex-direction: column;
-  }
-  .contact-list p {
-    padding: 10px 5px 8px 0;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 375px) {
-  .projects-text {
-    top: 60%;
-    width: 300px;
-    padding: 10px;
-  }
 }

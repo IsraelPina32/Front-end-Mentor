@@ -1,0 +1,78 @@
+@media (max-width: 1440px) {
+    .imagem-interactive {
+        width: 500px;
+    }
+    .content-titile {
+        height: 250px;
+        top: 35%;
+        right: 12%;
+    }
+    .content-titile .about-title {
+      font-size: 25px;
+    }
+    .content-titile .description {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      justify-content: center;
+    }
+    .home .title {
+      margin: 0;
+    }
+   
+    .about {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .content-titile {
+      position: static;
+      height: 250px;
+      bottom: 25%;
+      right: 25%;
+    }
+    .projects-title {
+      font-size: 50px;
+    }
+  
+    .content-titile .description {
+      font-size: 15px; 
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .projects {
+      grid: "projects-title" 
+            "projects-containers"
+              "projects-btn" ;
+    } 
+    .projects-btn, .projects-title {
+          margin: auto;
+    }
+  
+    .contact {
+      flex-direction: column;
+    }
+    .main-contact, .second-contact {
+       text-align: center;
+       gap: 15px;
+    }
+    .contact-list {
+      flex-direction: column;
+    }
+    .contact-list p {
+      padding: 10px 5px 8px 0;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .projects-text {
+      top: 60%;
+      width: 300px;
+      padding: 10px;
+    }
+  }
