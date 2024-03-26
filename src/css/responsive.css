@@ -1,6 +1,6 @@
 @media (max-width: 1440px) {
     .imagem-interactive {
-        width: 500px;
+        width: 100%;
     }
     .content-titile {
         height: 250px;
@@ -44,6 +44,18 @@
   }
   
   @media (max-width: 425px) {
+    .header {
+      flex-direction: column;
+    }
+
+    .header .soon {
+      padding: 8px 0;
+    }
+
+    .header .menu li a {
+      padding: 15px 10px;
+    }
+
     .projects {
       grid: "projects-title" 
             "projects-containers"
@@ -72,7 +84,7 @@
   @media (max-width: 375px) {
     .projects-text {
       top: 60%;
-      width: 300px;
+      width: 100%;
       padding: 10px;
     }
   }
