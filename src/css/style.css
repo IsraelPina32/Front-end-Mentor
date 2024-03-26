@@ -2,11 +2,13 @@
 
 
 .fixed {
-  background-color: red;
+  position: absolute;
   padding: 40px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  z-index: 1;
 }
 .fixed .soon {
   font-family: "Alata", sans-serif;
@@ -29,15 +31,17 @@
   border-bottom: 2px solid var(--branco);
 }
 .home {
-  background-image: url(../images/desktop/image-hero.jpg);
+  /* background-image: url(../images/desktop/image-hero.jpg); */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   min-height: 700px;
-  min-width: 550px;
+  max-width: 750px;
+  background-color: red;
   text-align: center;
   width: 100%;
   display: flex;
+  position: relative;
   align-items: center;
   padding: 25px;
 }
