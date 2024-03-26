@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-
-.fixed {
+.header {
   position: absolute;
   padding: 40px 100px;
   display: flex;
@@ -10,23 +9,23 @@
   width: 100%;
   z-index: 1;
 }
-.fixed .soon {
+.header .soon {
   font-family: "Alata", sans-serif;
   font-size: 32px;
   font-weight: 900;
   color: var(--branco);
   align-self: flex-start;
 }
-.fixed .menu {
+.header .menu {
   display: flex;
   align-items: center;
 }
-.fixed .menu li a {
+.header .menu li a {
   padding: 15px 15px;
   color: var(--branco);
   transition: 0.2s ease-in;
 }
-.fixed .menu li a:hover {
+.header .menu li a:hover {
   cursor: pointer;
   border-bottom: 2px solid var(--branco);
 }
