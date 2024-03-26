@@ -31,13 +31,11 @@
   border-bottom: 2px solid var(--branco);
 }
 .home {
-  /* background-image: url(../images/desktop/image-hero.jpg); */
+  background-image: url(../images/desktop/image-hero.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   min-height: 700px;
-  max-width: 750px;
-  background-color: red;
   text-align: center;
   width: 100%;
   display: flex;
