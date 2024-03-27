@@ -186,17 +186,24 @@ body {
   align-items: center;
   padding: 40px;
 }
-.second-list svg {
-  margin: 15px 15px 4px 15px;
+
+.second-list ul  {
+  display: flex;
+  align-items: center;
+}
+
+.second-list ul li img {
+  padding: 10px 18px;
+  margin: 3px;
   transition: 0.2s ease-in-out;
 }
-.second-list:hover {
+.second-list ul li img:hover {
   cursor: pointer;
   font-weight: 400;
-  border-radius: 10px;
+  border-bottom: 1px solid var(--branco);
 }
 .contact-description {
-  padding: 15px;
+  padding: 20px;
 }
 
 .attribution {

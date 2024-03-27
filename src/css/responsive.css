@@ -4,8 +4,8 @@
     }
     .content-titile {
         height: 250px;
-        top: 35%;
-        right: 12%;
+        top: 50%;
+        right: 10%;
     }
     .content-titile .about-title {
       font-size: 22px;
@@ -21,6 +21,7 @@
     }
     .home .title {
       margin: 0;
+      padding: 12px;
     }
    
     .about {
