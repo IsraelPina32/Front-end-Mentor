@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-body {
-  overflow-x: hidden;
-}
-
 .header {
-  position: absolute;
-  padding: 40px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,17 +32,18 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  min-height: calc(100vh - 80px);
   text-align: center;
+  flex-direction: column;
   display: flex;
   position: relative;
-  align-items: center;
-  padding: 25px;
+  align-items: start;
+  padding: 50px 120px;
 }
 .home .title {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  line-height: 65px;
+  text-align: left;
+  margin: 150px 0;
   font-size: 50px;
   width: 500px;
   margin-left: 90px;
@@ -59,8 +54,8 @@ body {
 }
 .about  {
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  margin: 130px auto;
+  max-width: 69.4rem;
   position: relative;
 }
 .content-about {
@@ -69,16 +64,16 @@ body {
 
 .content-titile {
   height: 350px;
-  width: 450px;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
   padding: 30px;
+  width: 550px;
   background-color: var(--branco);
   position: absolute;
   top: 35%;
-  right: 25%;
+  right: 0;
 }
 .content-titile .about-title {
   font-family: "Alata", sans-serif;
@@ -144,7 +139,7 @@ body {
   filter: grayscale(100%);
 }
 .project-container img {
-    display: block;
+    width: 100%;
 }
 .projects-text {
   font-family: "Josefin Sans", sans-serif;
@@ -153,7 +148,6 @@ body {
   line-height: 35px;
   font-weight: 400;
   font-size: 34px;
-  width: 20px;
   top: 70%;
   left: 15%;
   color: var(--branco);

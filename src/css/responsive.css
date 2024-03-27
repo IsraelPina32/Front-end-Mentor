@@ -16,12 +16,16 @@
   }
   
   @media (max-width: 768px) {
-    .home {
-      justify-content: center;
+    .header {
+      flex-direction: column;
+      gap: 10px;
     }
     .home .title {
       margin: 0;
-      padding: 12px;
+    }
+
+    .header .soon {
+      align-self: center;
     }
    
     .about {
@@ -31,9 +35,8 @@
     }
     .content-titile {
       position: static;
-      height: 250px;
-      bottom: 25%;
-      right: 25%;
+      width: 100%;
+      padding: 32px;
     }
     .projects-title {
       font-size: 50px;
@@ -47,6 +50,24 @@
   @media (max-width: 425px) {
     .header {
       flex-direction: column;
+      margin: 15px 0;
+    }
+
+    .header .menu {
+       display: block;
+    }
+    .header .menu li {
+      padding: 8px;
+    }
+    .home {
+      padding: 20px 30px;
+      align-items: center;
+    }
+
+    .home .title {
+       font-size: 38px;
+       padding: 20px;
+       width: 300px;
     }
 
     .header .soon {
@@ -54,9 +75,13 @@
     }
 
     .header .menu li a {
-      padding: 15px 10px;
+      padding: 15px 6px;
     }
 
+    .about {
+      padding: 30px;
+    }
+    
     .projects {
       grid: "projects-title" 
             "projects-containers"
